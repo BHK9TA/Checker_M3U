@@ -22,6 +22,7 @@ Este script em Python processa arquivos `.m3u` (listas de links de IPTV) e separ
 
    ```bash
    pip install aiohttp asyncio
+
 🚀 Como Usar
 Preparar o ambiente:
 
@@ -47,10 +48,12 @@ Você pode alterar esses critérios modificando esta linha do código:
 
    ```bash
    if status in (200, 204, 301, 302, 304, 406):
+
 Se, por exemplo, você quiser incluir o código 403 (proibido) nos links válidos, altere para:
 
    ```bash
    if status in (200, 204, 301, 302, 304, 403, 406):
+
 ⚠️ Importante: Alterar esses critérios afeta a precisão da análise. Dependendo dos códigos de resposta escolhidos, a precisão da separação de links pode variar entre 90% e 100%.
 
 📂 Estrutura das Pastas
@@ -87,4 +90,5 @@ Exemplo de Execução
    Link inválido: http://exemplo.com/fail (status: 404)
    ...
    Programas ao vivo: 150/150 (100.00%) | Linhas: 450/450 (100.00%)
+
 Após a execução, você encontrará os arquivos separados em canais_validos e canais_invalidos, com relatórios em .txt mostrando o status de cada link.

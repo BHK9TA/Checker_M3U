@@ -1,44 +1,34 @@
-markdown
-# Checker_M3U
+Checker_M3U
+Este script em Python processa arquivos .m3u (listas de links de IPTV) e separa automaticamente links de transmissão ao vivo funcionais de links não funcionais. Ele gera arquivos de saída com links válidos e inválidos, além de relatórios com o status HTTP de cada link.
 
-Este script em Python processa arquivos `.m3u` (listas de links de IPTV) e separa automaticamente links de transmissão ao vivo funcionais de links não funcionais. Ele gera arquivos de saída com links válidos e inválidos, além de relatórios com o status HTTP de cada link.
+Funcionalidades
+Processa listas .m3u: Separa links funcionais de não funcionais.
+Códigos HTTP personalizáveis: Defina os códigos de resposta que você considera válidos (ex: 200, 204, 301, etc.).
+Gera arquivos .m3u e .txt: Com links válidos e inválidos, e relatórios de status.
+Alta precisão (90%-100%): Dependendo dos critérios de validação que você escolher.
+📦 Instalação
+Instale o Python:
 
-## Funcionalidades
+O script foi testado na versão Python 3.12.6. Certifique-se de estar usando esta versão ou uma similar.
+Instale as bibliotecas necessárias: Execute o seguinte comando no terminal para instalar as dependências:
 
-- **Processa listas `.m3u`**: Separa links funcionais de não funcionais.
-- **Códigos HTTP personalizáveis**: Defina os códigos de resposta que você considera válidos (ex: 200, 204, 301, etc.).
-- **Gera arquivos `.m3u` e `.txt`**: Com links válidos e inválidos, e relatórios de status.
-- **Alta precisão (90%-100%)**: Dependendo dos critérios de validação que você escolher.
-
----
-
-## 📦 Instalação
-
-1. **Instale o Python**:
-   - O script foi testado na versão **Python 3.12.6**. Certifique-se de estar usando esta versão ou uma similar.
-   
-2. **Instale as bibliotecas necessárias**:
-   Execute o seguinte comando no terminal para instalar as dependências:
-
-   ```bash
-   pip install aiohttp asyncio
+pip install aiohttp asyncio
 
 🚀 Como Usar
 Preparar o ambiente:
-
 Coloque o arquivo Checker_M3U.py em uma pasta.
 Crie uma pasta ao lado chamada origem e adicione seu arquivo .m3u dentro dessa pasta.
-Executar o script:
 
+Executar o script:
 Abra o terminal (ou o CMD no Windows) e navegue até a pasta onde o arquivo Checker_M3U.py está localizado.
 
 Execute o comando:
 
-   ```
-   python Checker_M3U.py
-   
+python Checker_M3U.py
+
 Resultado:
 O script separará automaticamente os links e criará duas pastas:
+
 canais_validos: Links que passaram no teste de funcionalidade.
 canais_invalidos: Links que não passaram no teste.
 🔧 Configuração Personalizada
@@ -46,13 +36,11 @@ Códigos de Resposta HTTP
 Por padrão, o script considera os seguintes códigos HTTP como válidos: 200, 204, 301, 302, 304, 406.
 Você pode alterar esses critérios modificando esta linha do código:
 
-   ```bash
-   if status in (200, 204, 301, 302, 304, 406):
+if status in (200, 204, 301, 302, 304, 406):
 
 Se, por exemplo, você quiser incluir o código 403 (proibido) nos links válidos, altere para:
 
-   ```bash
-   if status in (200, 204, 301, 302, 304, 403, 406):
+if status in (200, 204, 301, 302, 304, 403, 406):
 
 ⚠️ Importante: Alterar esses critérios afeta a precisão da análise. Dependendo dos códigos de resposta escolhidos, a precisão da separação de links pode variar entre 90% e 100%.
 
@@ -82,13 +70,14 @@ A precisão da análise, então, pode variar entre 90% e 100%, dependendo dos c�
 Python 3.12.6 (ou semelhante)
 Bibliotecas Python: aiohttp, asyncio
 Exemplo de Execução
-   ```bash
-   python Checker_M3U.py
-   Processando arquivo: origem/lista_exemplo.m3u
-   Total de programas ao vivo: 150, Total de linhas: 450
-   Link válido: http://exemplo.com/stream (status: 200)
-   Link inválido: http://exemplo.com/fail (status: 404)
-   ...
-   Programas ao vivo: 150/150 (100.00%) | Linhas: 450/450 (100.00%)
+$ python Checker_M3U.py
+Processando arquivo: origem/lista_exemplo.m3u
+Total de programas ao vivo: 150, Total de linhas: 450
+Link válido: http://exemplo.com/stream (status: 200)
+Link inválido: http://exemplo.com/fail (status: 404)
+...
+Programas ao vivo: 150/150 (100.00%) | Linhas: 450/450 (100.00%)
 
 Após a execução, você encontrará os arquivos separados em canais_validos e canais_invalidos, com relatórios em .txt mostrando o status de cada link.
+
+Segue um outro repositório sobre como colocar o catálogo de transmissão ao vivo do jellyfin em modo lista https://github.com/BHK9TA/LiveTv-in-Jellyfin-list-mode

@@ -34,7 +34,7 @@ Abra o terminal (ou o CMD no Windows) e navegue até a pasta onde o arquivo Chec
 
 Execute o comando:
 
-
+   ```
    python Checker_M3U.py
    
 Resultado:

@@ -34,10 +34,10 @@ Abra o terminal (ou o CMD no Windows) e navegue até a pasta onde o arquivo Chec
 
 Execute o comando:
 
-   ```bash
-   python Checker_M3U.py
-Resultado:
 
+   python Checker_M3U.py
+   
+Resultado:
 O script separará automaticamente os links e criará duas pastas:
 canais_validos: Links que passaram no teste de funcionalidade.
 canais_invalidos: Links que não passaram no teste.

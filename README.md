@@ -14,7 +14,7 @@ Este script em Python processa arquivos `.m3u` (listas de links de IPTV) e separ
    - O script foi testado na versão **Python 3.12.6**. Certifique-se de estar usando esta versão ou uma similar.
 2. **Instale as bibliotecas necessárias**:
    Execute o seguinte comando no terminal para instalar as dependências:
-    pip install aiohttp asyncio
+   pip install aiohttp asyncio
 
 🚀 Como Usar
 Preparar o ambiente:

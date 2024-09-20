@@ -1,8 +1,4 @@
-Aqui está uma versão formatada em Markdown que você pode usar no GitHub. O Markdown é a linguagem padrão para formatação de README em repositórios GitHub, e ela permite títulos, negritos, listas e códigos formatados de maneira clara.
-
-Exemplo de README.md:
 markdown
-Copiar código
 # Checker_M3U
 
 Este script em Python processa arquivos `.m3u` (listas de links de IPTV) e separa automaticamente links de transmissão ao vivo funcionais de links não funcionais. Ele gera arquivos de saída com links válidos e inválidos, além de relatórios com o status HTTP de cada link.
@@ -37,9 +33,8 @@ Abra o terminal (ou o CMD no Windows) e navegue até a pasta onde o arquivo Chec
 
 Execute o comando:
 
-bash
-Copiar código
-python Checker_M3U.py
+   ```bash
+   python Checker_M3U.py
 Resultado:
 
 O script separará automaticamente os links e criará duas pastas:
@@ -50,14 +45,12 @@ Códigos de Resposta HTTP
 Por padrão, o script considera os seguintes códigos HTTP como válidos: 200, 204, 301, 302, 304, 406.
 Você pode alterar esses critérios modificando esta linha do código:
 
-python
-Copiar código
-if status in (200, 204, 301, 302, 304, 406):
+   ```bash
+   if status in (200, 204, 301, 302, 304, 406):
 Se, por exemplo, você quiser incluir o código 403 (proibido) nos links válidos, altere para:
 
-python
-Copiar código
-if status in (200, 204, 301, 302, 304, 403, 406):
+   ```bash
+   if status in (200, 204, 301, 302, 304, 403, 406):
 ⚠️ Importante: Alterar esses critérios afeta a precisão da análise. Dependendo dos códigos de resposta escolhidos, a precisão da separação de links pode variar entre 90% e 100%.
 
 📂 Estrutura das Pastas
@@ -86,13 +79,12 @@ A precisão da análise, então, pode variar entre 90% e 100%, dependendo dos c�
 Python 3.12.6 (ou semelhante)
 Bibliotecas Python: aiohttp, asyncio
 Exemplo de Execução
-bash
-Copiar código
-$ python Checker_M3U.py
-Processando arquivo: origem/lista_exemplo.m3u
-Total de programas ao vivo: 150, Total de linhas: 450
-Link válido: http://exemplo.com/stream (status: 200)
-Link inválido: http://exemplo.com/fail (status: 404)
-...
-Programas ao vivo: 150/150 (100.00%) | Linhas: 450/450 (100.00%)
+   ```bash
+   python Checker_M3U.py
+   Processando arquivo: origem/lista_exemplo.m3u
+   Total de programas ao vivo: 150, Total de linhas: 450
+   Link válido: http://exemplo.com/stream (status: 200)
+   Link inválido: http://exemplo.com/fail (status: 404)
+   ...
+   Programas ao vivo: 150/150 (100.00%) | Linhas: 450/450 (100.00%)
 Após a execução, você encontrará os arquivos separados em canais_validos e canais_invalidos, com relatórios em .txt mostrando o status de cada link.

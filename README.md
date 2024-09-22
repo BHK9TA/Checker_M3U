@@ -85,3 +85,5 @@ Os links válidos e inválidos são salvos em arquivos:
 Siga esses passos para configurar e usar o verificador de links M3U de forma eficaz!
 
 Aqui está um outro repositório meu sobre o Jellyfin: https://github.com/BHK9TA/LiveTv-in-Jellyfin-list-mode
+
+Download: [Checker_M3U_0.02.zip]([https://github.com/user-attachments/files/17091561/Checker_M3U_0.02.zip](https://github.com/user-attachments/files/17091549/Checker_M3U_0.02.zip))

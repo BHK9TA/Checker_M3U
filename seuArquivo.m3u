@@ -1,0 +1,21 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="canal1" tvg-name="Cultura Pop" tvg-logo="http://example.com/imagens/canal1.png" group-title="Entretenimento", Cultura Pop
+http://example.com/canais/canal1
+#EXTINF:-1 tvg-id="canal2" tvg-name="Esporte Total" tvg-logo="http://example.com/imagens/canal2.png" group-title="Esportes", Esporte Total
+http://example.com/canais/canal2
+#EXTINF:-1 tvg-id="canal3" tvg-name="Música Hits" tvg-logo="http://example.com/imagens/canal3.png" group-title="Música", Música Hits
+http://example.com/canais/canal3
+#EXTINF:-1 tvg-id="canal4" tvg-name="Notícias 24h" tvg-logo="http://example.com/imagens/canal4.png" group-title="Notícias", Notícias 24h
+http://example.com/canais/canal4
+#EXTINF:-1 tvg-id="canal1" tvg-name="Cultura Pop" tvg-logo="http://example.com/imagens/canal1.png" group-title="Entretenimento", Cultura Pop
+http://example.com/canais/canal1
+#EXTINF:-1 tvg-id="canal5" tvg-name="Documentários Live" tvg-logo="http://example.com/imagens/canal5.png" group-title="Educação", Documentários Live
+http://example.com/canais/canal5
+#EXTINF:-1 tvg-id="canal6" tvg-name="Séries em Foco" tvg-logo="http://example.com/imagens/canal6.png" group-title="Séries", Séries em Foco
+http://example.com/canais/canal6
+#EXTINF:-1 tvg-id="canal7" tvg-name="Culinária Fácil" tvg-logo="http://example.com/imagens/canal7.png" group-title="Culinária", Culinária Fácil
+http://example.com/canais/canal7
+#EXTINF:-1 tvg-id="canal3" tvg-name="Música Hits" tvg-logo="http://example.com/imagens/canal3.png" group-title="Música", Música Hits
+http://example.com/canais/canal3
+#EXTINF:-1 tvg-id="canal8" tvg-name="Viagens pelo Mundo" tvg-logo="http://example.com/imagens/canal8.png" group-title="Viagens", Viagens pelo Mundo
+http://example.com/canais/canal8

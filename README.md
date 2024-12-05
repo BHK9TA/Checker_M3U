@@ -86,5 +86,4 @@ Siga esses passos para configurar e usar o verificador de links M3U de forma efi
 
 Aqui está um outro [repositório](https://github.com/BHK9TA/LiveTv-in-Jellyfin-list-mode) meu sobre o Jellyfin
 
-Download: [Checker_M3U_0.02.zip](https://github.com/BHK9TA/Checker_M3U/releases/tag/Checker_M3U_0.02)
-
+Download: [Checker_M3U_0.02.zip](https://github.com/user-attachments/files/18030724/Checker_M3U_0.02.zip)
